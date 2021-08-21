@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>task2</title>
+	<style>
+            body {
+                background-color: #ffffff;
+            }
+            .first-block {
+                background-color: #30D2FB;
+            }
+            .second-block {
+                background-color: #FB80A9;
+            }
+            p {
+                color: #000000;
+            }
+            span {
+                color: #55035F;
+            }
+            .first-block span {
+                font-style: italic;
+            }
+            .first-block > p span {
+                font-weight: bold;
+            }
+            .row-number {
+                background-color: yellow;
+            }
+            .block-number {
+                background-color: #30D2FB;
+            }
+            .first-block .block-number {
+                background-color: #0EF82F;
+            }
+            .second-block > p:nth-child(odd) .row-number{
+                background-color: #A3A3A3;
+            }
+            .second-block > p:nth-child(even) .row-number{
+                background-color: #FD971F;
+            }
+            a:hover {
+                background-color: #FB80A9;
+            }
+        </style>
+</head>
+<body>
+	<h1>Селекторы</h1>
+        
+        <div class='first-block'>
+            <p>Это <span class='block-number'>первый</span> блок</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit veniam maxime consectetur, corrupti atque numquam quisquam quis suscipit illo quam eveniet iste consequuntur repellendus eius sit unde obcaecati ipsum dolor.</p>
+            <p>простой текст <span>вложенный текст1</span></p>
+            <span>простой текст</span>
+            <div>
+                <p>снова простой текст, но вложенный в div и содержащий 2 вложенных span'а: <span>первый</span>, <span>второй</span>.</p>
+            </div>
+        </div>
+        <div class='second-block'>
+            <p><span class='row-number'>Первая</span> строка <span class='block-number'>второго</span> блока</p>
+            <p><span class='row-number'>Вторая</span> строка <span class='block-number'>второго</span> блока</p>
+            <p><span class='row-number'>Третья</span> строка <span class='block-number'>второго</span> блока</p>
+            <p><span class='row-number'>Четвертая</span> строка <span class='block-number'>второго</span> блока</p>
+        </div>
+        <div class='third-block'>
+            <p>Это <span class='block-number'>третий</span> блок</p>
+            <a href="task3.html">Ссылка на третье задание</a>
+        </div>
+</body>
+</html>
